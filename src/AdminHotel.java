@@ -25,9 +25,19 @@ public class AdminHotel {
 		
 		for (Room room : Manager.getInstance().getRoomList()) {
 			System.out.println(Manager.getInstance().getRoomList().toString());
-		}*/
+		}*/	
 		
-		
+	}
+	
+	public static void worker(String[] lines) {
+		if(lines.length == 4) {
+			String[] activities = lines[3].split(",");
+			if(lines[1].length() == 3) {
+				System.out.println("--> New worker added " + lines[1] + "<--");
+			} else {
+				System.out.println("--> Problem added new Worker");
+			}
+		}
 	}
 	
 	public static void problem(String room) {
